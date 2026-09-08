@@ -5,10 +5,6 @@ title: "Accueil"
 
 ---
 
-# {{ site.author.name }}
-
-**{{ site.author.affiliation }}**
-
 Bienvenue sur mon site professionnel. Je suis chercheur au **CNRS** spécialisé en [votre domaine].
 Explorez mes travaux, mon CV, et mes enseignements via les onglets ci-dessus.
 
