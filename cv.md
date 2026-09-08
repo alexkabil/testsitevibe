@@ -21,7 +21,8 @@ header-includes:
   }
 ---
 
-# **Alexandre KABIL** {style="text-align: center; font-size: 1.5em; font-weight: bold;"}
+# **Alexandre KABIL** 
+
 **Chercheur au CNRS** | [Email](mailto:alexandre.kabil@cnrs.fr) | [ORCID](https://orcid.org/0000-0000-0000-0000) | [Google Scholar](https://scholar.google.fr/citations?user=...) | [ResearchGate](https://www.researchgate.net/profile/...)
 
 ---
