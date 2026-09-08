@@ -1,0 +1,22 @@
+# _data/translations.yml
+fr:
+  home: "Accueil"
+  cv: "CV"
+  research: "Recherche"
+  teaching: "Enseignements"
+  contact: "Contact"
+  download_cv: "Télécharger mon CV"
+  email: "Email"
+  orcid: "ORCID"
+  google_scholar: "Google Scholar"
+
+en:
+  home: "Home"
+  cv: "CV"
+  research: "Research"
+  teaching: "Teaching"
+  contact: "Contact"
+  download_cv: "Download my CV"
+  email: "Email"
+  orcid: "ORCID"
+  google_scholar: "Google Scholar"

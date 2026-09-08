@@ -1,13 +1,17 @@
 # _config.yml
-title: "alex kabil"
-description: "Site statique généré par Jekyll"
+title: "Alexandre KABIL"
+description: "Site statique généré par Jekyll. Modifications en cours"
 url: "https://alexkabil.github.io"  # Remplacez par votre URL GitHub Pages
 baseurl: "/testsitevibe"  # Nom du dépôt GitHub (ex: "/mon-site")
+
+# Langues
+languages: ["fr", "en"]
+default_lang: "fr"
 
 # Informations du chercheur
 author:
   name: "Alexandre KABIL"
-  email: "alexandre.kabil@cnrs.fr"
+  email: "alexandre.kabil@---.fr"
   affiliation: "CNRS"
   orcid: "0000-0000-0000-0000"  # Exemple d'ORCID
   google_scholar: ""
@@ -24,15 +28,29 @@ plugins:
 
 # Navigation
 nav:
-  - title: "Accueil"
-    url: /
-  - title: "CV"
-    url: /cv
-  - title: "Recherche"
-    url: /recherche
-  - title: "Enseignements"
-    url: /enseignements
-  - title: "Publications"
-    url: /publications
-  - title: "Contact"
-    url: /contact
+  fr:
+    - title: "Accueil"
+      url: /fr/
+    - title: "CV"
+      url: /fr/cv
+    - title: "Recherche"
+      url: /fr/recherche
+    - title: "Enseignements"
+      url: /fr/enseignements
+    - title: "Publications"
+      url: /fr/publications
+    - title: "Contact"
+      url: /fr/contact
+  en:
+    - title: "Home"
+      url: /en/
+    - title: "CV"
+      url: /en/cv
+    - title: "Research"
+      url: /en/recherche
+    - title: "Teachings"
+      url: /en/enseignements
+    - title: "Publications"
+      url: /en/publications
+    - title: "Contact"
+      url: /en/contact

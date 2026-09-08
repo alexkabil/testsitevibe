@@ -1,6 +1,7 @@
 <nav class="navbar">
-  <ul>
-    {% for item in site.nav %}
+  <ul class="nav-list">
+    {% assign lang = page.lang | default: site.default_lang %}
+    {% for item in site.nav[lang] %}
       <li>
         <a href="{{ item.url | relative_url }}"
            {% if page.url == item.url %}class="active"{% endif %}>
@@ -9,4 +10,17 @@
       </li>
     {% endfor %}
   </ul>
+
+  <!-- Sélecteur de langue -->
+  <div class="lang-selector">
+    {% for language in site.languages %}
+      {% assign other_lang = language %}
+      {% if other_lang != lang %}
+        <a href="/{{ other_lang }}/"
+           class="lang-link {% if lang == other_lang %}active{% endif %}">
+          {{ other_lang | upcase }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </nav>
