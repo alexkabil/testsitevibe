@@ -1,0 +1,38 @@
+# _config.yml
+title: "Nom du Chercheur"
+description: "Site professionnel - CV, Recherche, Enseignements"
+url: "https://alexkabil.github.io"  # Remplacez par votre URL GitHub Pages
+baseurl: "/site-chercheur"  # Nom du dépôt GitHub (ex: "/mon-site")
+
+# Informations du chercheur
+author:
+  name: "Alexandre KABIL"
+  email: "alexandre.kabil@cnrs.fr"
+  affiliation: "CNRS"
+  orcid: "0000-0000-0000-0000"  # Exemple d'ORCID
+  google_scholar: "https://scholar.google.fr/citations?user=..."
+  researchgate: "https://www.researchgate.net/profile/..."
+
+# Paramètres Jekyll
+theme: minima  # Thème par défaut (peut être remplacé)
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Navigation
+nav:
+  - title: "Accueil"
+    url: /
+  - title: "CV"
+    url: /cv
+  - title: "Recherche"
+    url: /recherche
+  - title: "Enseignements"
+    url: /enseignements
+  - title: "Publications"
+    url: /publications
+  - title: "Contact"
+    url: /contact

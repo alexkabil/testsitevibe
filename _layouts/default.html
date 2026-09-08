@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <!-- Feuille de style personnalisée -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- Font Awesome pour les icônes (optionnel) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  {% include header.html %}
+
+  <!-- Navigation -->
+  {% include nav.html %}
+
+  <!-- Contenu principal -->
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  {% include footer.html %}
+</body>
+</html>
