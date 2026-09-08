@@ -1,7 +1,10 @@
 ---
+
 layout: page
 title: "Recherche"
+
 ---
+
 # Recherche
 
 ## 🔬 **Thèmes de recherche**
