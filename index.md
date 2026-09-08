@@ -1,7 +1,10 @@
 ---
+
 layout: home
 title: "Accueil"
+
 ---
+
 # {{ site.author.name }}
 
 **{{ site.author.affiliation }}**
