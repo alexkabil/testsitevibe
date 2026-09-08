@@ -3,7 +3,9 @@ fr:
   home: "Accueil"
   cv: "CV"
   research: "Recherche"
+  research_corvette: "Corvette"
   teaching: "Enseignements"
+
   contact: "Contact"
   download_cv: "Télécharger mon CV"
   email: "Email"
@@ -14,6 +16,7 @@ en:
   home: "Home"
   cv: "CV"
   research: "Research"
+  research_corvette: "Corvette Project"
   teaching: "Teaching"
   contact: "Contact"
   download_cv: "Download my CV"
