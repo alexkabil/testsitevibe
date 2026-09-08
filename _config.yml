@@ -52,7 +52,7 @@ nav:
     - title: "CV"
       url: /en/cv
     - title: "Research"
-      url: /en/recherche
+      url: /en/research
       subitems:
         - title: "Corvette Project"
           url: /en/research/corvette
