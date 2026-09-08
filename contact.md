@@ -1,7 +1,10 @@
 ---
+
 layout: page
 title: "Contact"
+
 ---
+
 # Contact
 
 ## 📧 **Coordonnées**
