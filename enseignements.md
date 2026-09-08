@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "Enseignements"
+
 ---
+
 # Description des enseignements de l'année 2026-2027
 
 ## 🎓 **Cours dispensés**
