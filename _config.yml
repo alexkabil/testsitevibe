@@ -10,8 +10,8 @@ author:
   email: "alexandre.kabil@cnrs.fr"
   affiliation: "CNRS"
   orcid: "0000-0000-0000-0000"  # Exemple d'ORCID
-  google_scholar: "https://scholar.google.fr/citations?user=..."
-  researchgate: "https://www.researchgate.net/profile/..."
+  google_scholar: ""
+  researchgate: ""
 
 # Paramètres Jekyll
 theme: minima  # Thème par défaut (peut être remplacé)
