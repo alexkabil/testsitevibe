@@ -2,7 +2,7 @@
 layout: page
 title: "Enseignements"
 ---
-# Enseignements
+# Description des enseignements de l'année 2026-2027
 
 ## 🎓 **Cours dispensés**
    Année       | Cours                          | Niveau       | Établissement       |
@@ -21,3 +21,7 @@ title: "Enseignements"
 ## 📖 **Matériel pédagogique**
 - [Support de cours 1](/assets/pdf/cours-1.pdf)
 - [Support de cours 2](/assets/pdf/cours-2.pdf)
+
+# Description des enseignements de l'année 2025-2026
+
+## Cours spécifiques: 
