@@ -1,6 +1,6 @@
 # _config.yml
-title: "Nom du Chercheur"
-description: "Site professionnel - CV, Recherche, Enseignements"
+title: "alex kabil"
+description: "Site statique généré par Jekyll"
 url: "https://alexkabil.github.io"  # Remplacez par votre URL GitHub Pages
 baseurl: "/testsitevibe"  # Nom du dépôt GitHub (ex: "/mon-site")
 
