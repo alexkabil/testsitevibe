@@ -1,7 +1,10 @@
 ---
+
 layout: page
 title: "Publications"
+
 ---
+
 # Publications
 
 ## 📄 **Articles dans des revues**
