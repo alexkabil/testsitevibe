@@ -1,144 +1,71 @@
-/* assets/css/style.css */
-
-/* Reset et variables */
-:root {
-  --primary-color: #0056b3;  /* Bleu CNRS */
-  --secondary-color: #ffffff;
-  --text-color: #333333;
-  --background-color: #f8f9fa;
-  --link-color: #0056b3;
-  --nav-bg: #ffffff;
-  --footer-bg: #333333;
-  --footer-text: #ffffff;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-}
-
-/* Sélecteur de langue */
-.lang-selector {
-  margin-left: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.lang-link {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.lang-link:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.lang-link.active {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header */
-.header {
-  display: flex;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  background-color: var(--nav-bg);
-}
-
-.header .logo img {
-  margin-right: 20px;
-}
-
-.header .title h1 {
-  margin: 0;
-  color: var(--primary-color);
-}
-
-.header .title p {
-  margin: 5px 0 0 0;
-  color: var(--text-color);
-  font-size: 1.1em;
-}
-
-/* Navigation */
+/* ===== NAVIGATION ===== */
 .navbar {
-  background-color: var(--nav-bg);
+  background-color: var(--nav-bg, white);
   padding: 10px 0;
   border-bottom: 1px solid #eee;
+  position: relative; /* Important pour le positionnement des dropdowns */
 }
 
-.navbar ul {
+.nav-list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: center; /* Centre les éléments de navigation */
 }
 
-.navbar li {
-  margin: 0 15px;
+.nav-item {
+  position: relative; /* Nécessaire pour le positionnement absolu du dropdown */
+  margin: 0 10px;
 }
 
-.navbar a {
+/* Style des liens de navigation */
+.nav-item > a {
+  display: block;
   text-decoration: none;
-  color: var(--text-color);
-  font-weight: 500;
-  padding: 5px 10px;
+  color: var(--text-color, #333);
+  padding: 10px 15px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-weight: 500;
 }
 
-.navbar a:hover {
-  background-color: var(--primary-color);
+.nav-item > a:hover,
+.nav-item > a.active {
+  background-color: var(--primary-color, #0056b3);
   color: white;
 }
 
-.navbar a.active {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-/* Style du menu déroulant */
+/* ===== MENU DÉROULANT ===== */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 100%; /* Place le menu juste en dessous du parent */
   left: 0;
   background-color: white;
   min-width: 200px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1000;
+  border-radius: 0 0 4px 4px;
   list-style: none;
   padding: 0;
   margin: 0;
+  z-index: 1000; /* Assure que le menu est au-dessus des autres éléments */
+  /* MASQUER PAR DÉFAUT */
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px); /* Effet de transition fluide */
+  transition: all 0.3s ease;
 }
 
+/* AFFICHER AU SURVOL */
 .dropdown:hover .dropdown-menu {
+  display: block;
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 
+/* Style des sous-éléments du menu */
 .dropdown-menu li {
   padding: 0;
 }
@@ -146,131 +73,62 @@ body {
 .dropdown-menu a {
   display: block;
   padding: 10px 15px;
-  color: var(--text-color);
+  color: var(--text-color, #333);
   text-decoration: none;
   border-bottom: 1px solid #eee;
 }
 
 .dropdown-menu a:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, #0056b3);
   color: white;
 }
 
-
-/* Contenu principal */
-main {
-  padding: 20px 0;
+/* ===== SÉLECTEUR DE LANGUE ===== */
+.lang-selector {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
 }
 
-h1, h2, h3 {
-  color: var(--primary-color);
-}
-
-h1 {
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 10px;
-}
-
-h2 {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-a {
-  color: var(--link-color);
+.lang-link {
+  color: var(--text-color, #333);
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-.social-links {
-  margin-bottom: 15px;
-}
-
-.social-links a {
-  color: var(--footer-text);
-  font-size: 1.5em;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: var(--primary-color);
-}
-
-/* Style pour les listes */
-ul, ol {
-  margin-left: 20px;
-}
-
-/* Style pour les boutons (ex: télécharger CV) */
-button, .button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px 15px;
-  border: none;
+  font-weight: bold;
+  padding: 5px 10px;
   border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
+  transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: #003d7a;
+.lang-link:hover,
+.lang-link.active {
+  background-color: var(--primary-color, #0056b3);
+  color: white;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header .logo {
-    margin-bottom: 10px;
-  }
-
-  .navbar ul {
+  .nav-list {
     flex-direction: column;
     align-items: center;
   }
 
-  .navbar li {
-    margin: 5px 0;
+  .dropdown-menu {
+    position: static; /* Désactive le positionnement absolu sur mobile */
+    width: 100%;
+    box-shadow: none;
+    display: none; /* Masque par défaut sur mobile */
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Affiche au survol sur mobile */
+  }
+
+  .lang-selector {
+    position: static;
+    transform: none;
+    margin-top: 10px;
   }
 }

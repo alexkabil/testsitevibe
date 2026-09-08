@@ -1,11 +1,11 @@
 ---
 
 layout: page
-title: "Projet corvette"
+title: "Projet Tactic"
 lang: "fr"
 
 ---
 
-# Projet corvette
+# Projet tactic
 
 ## 🔬 C'était cool

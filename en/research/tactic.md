@@ -1,12 +1,12 @@
 ---
 
 layout: page
-title: "Corvette project"
+title: "tactic project"
 lang: "en"
 
 ---
 
-# first project
+# seconds project
 
 ## 🔬 thematics
 Mes travaux portent principalement sur :
