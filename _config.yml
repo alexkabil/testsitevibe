@@ -39,7 +39,7 @@ nav:
         - title: "Projet Corvette"
           url: /fr/recherche/corvette
         - title: "projet tactic"
-          url: /fr/research/tactic
+          url: /fr/recherche/tactic
     - title: "Enseignements"
       url: /fr/enseignements
     - title: "Publications"
@@ -56,7 +56,7 @@ nav:
       subitems:
         - title: "Corvette Project"
           url: /en/research/corvette
-          - title: "Tactic Project"
+        - title: "Tactic Project"
           url: /en/research/tactic
     - title: "Teachings"
       url: /en/enseignements
