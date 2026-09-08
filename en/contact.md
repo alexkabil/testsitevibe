@@ -2,10 +2,11 @@
 
 layout: page
 title: "Contact"
+lang: "en"
 
 ---
 
-# Contact
+# Contact me when you can
 
 ## 📧 **Coordonnées**
 - **Email** : [{{ site.author.email }}](mailto:{{ site.author.email }})

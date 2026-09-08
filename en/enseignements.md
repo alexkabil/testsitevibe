@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Enseignements"
+title: "Teachings"
+lang: "en"
 
 ---
 

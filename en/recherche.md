@@ -1,7 +1,8 @@
 ---
 
 layout: page
-title: "Recherche"
+title: "Research"
+lang: "en"
 
 ---
 

@@ -2,6 +2,7 @@
 
 layout: page
 title: "Contact"
+lang: "fr"
 
 ---
 
