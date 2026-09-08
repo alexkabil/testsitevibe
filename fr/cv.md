@@ -29,6 +29,7 @@ header-includes:
 ---
 
 ## 📌 **Informations personnelles**
+
  | **Champ**          | **Détails**                                                                 |
  |---------------------|-----------------------------------------------------------------------------|
  | **Adresse**         | CNRS, [Nom du laboratoire], [Adresse], [Code postal] [Ville], France       |
@@ -41,6 +42,7 @@ header-includes:
 ---
 
 ## 🎓 **Formation**
+
  | **Année**       | **Diplôme**                          | **Établissement**               | **Spécialité**               |
  |-----------------|--------------------------------------|---------------------------------|-------------------------------|
  | 2015–2018       | **Doctorat en [Domaine]**            | Université Paris-Saclay         | Titre de la thèse            |
@@ -50,6 +52,7 @@ header-includes:
 ---
 
 ## 💼 **Expérience professionnelle**
+
  | **Période**       | **Poste**                          | **Employeur**                   | **Localisation**       |
  |-------------------|------------------------------------|---------------------------------|------------------------|
  | 2020–Présent      | **Chercheur**                      | CNRS                            | [Ville], France        |
@@ -58,6 +61,7 @@ header-includes:
 
 ---
 ### **Détails des postes**
+
 - **Chercheur au CNRS (2020–Présent)**
   - Projet : [Nom du projet]
   - Responsabilités : [Description des tâches]
